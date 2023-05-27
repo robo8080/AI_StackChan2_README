@@ -4,7 +4,7 @@ AIｽﾀｯｸﾁｬﾝ2の使い方です。
 AIｽﾀｯｸﾁｬﾝ2の特徴<br>
 
 * 音声合成にWeb版 VOICEVOXを使います。
-* 音声認識に"Google Cloud STT"か"Whisper"のどちらかを選択できます。
+* 音声認識に"Google Cloud STT"か"OpenAI Whisper"のどちらかを選択できます。
 
 ---
 
@@ -18,7 +18,7 @@ ChatGPTのAPIキー取得方法は以下の通りです。(詳細はこのペー
 ### Web版 VOICEVOX のAPIキーの取得 ###
 
 * Web版 VOICEVOX のAPIキーの取得方法は、このページ（[ttsQuestV3Voicevox](https://github.com/ts-klassen/ttsQuestV3Voicevox/ "Title")）の一番下の方を参照してください。)<br>
-
+VOICEVOXのAPIキー取得後忘れずに“VOICEVOX用API利用登録”をしてください。そうしないと音声合成が高速にならないので音声が途切れ途切れになります。
 
 ### Google Cloud Speech to Text のAPIキーの取得（音声認識にWhisperを使うときは不要） ###
 
@@ -26,13 +26,14 @@ Google Cloud Speech to TextのAPIキー取得方法は以下の通りです。(�
 
 * [Google Cloud Platformのウェブサイト](https://cloud.google.com/?hl=ja/ "Title")にアクセスして、アカウントを作成します。メールアドレスと携帯電話番号が必要です。カードの登録が必須ですが、無料トライアルや無料枠があります。
 * アカウント作成後、APIキーを取得します。<br>
+APIキーでSpeech to Textを有効にするのを忘れないで下さい。<br>
 
 ---
 
 
 ### 使い方 ###
 
-* SDカードのルートに以下の2つのファイルを作成しておくと、使用できるようになります。<br>
+* SDカードのルートに以下の2つのファイルを作成しておくと、使用できるようになります。<br>正常に動作するのが確認できたら設定に使ったSDカードは必ず抜いておいて下さい。
 
 1. wifi.txtファイル：ファイル名は"wifi.txt"で、中身は次の通りです。<br>
 YOUR_WIFI_SSID<br>
@@ -44,7 +45,7 @@ YOUR_VOICEVOX_APIKEY<br>
 YOUR_STT_APIKEY<br>
 
 * 【注意】<br>"YOUR_STT_APIKEY"には"Google Cloud STTのAPIキー" または、"YOUR_OPENAI_APIKEY"と同じものを設定します。<br>
-"YOUR_STT_APIKEY"に"YOUR_OPENAI_APIKEY"と同じものを設定した場合は音声認識にWhisperが使われます。
+"YOUR_STT_APIKEY"に"YOUR_OPENAI_APIKEY"と同じものを設定した場合は音声認識にOpenAI Whisperが使われます。
 
 
 * もしM5Stackが以前にWifiに接続していた場合、SDカードが必要なく自動的にWifiに接続されます。<br>
