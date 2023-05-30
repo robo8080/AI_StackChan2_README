@@ -5,6 +5,12 @@ AIｽﾀｯｸﾁｬﾝ2の特徴<br>
 
 * 音声合成にWeb版 VOICEVOXを使います。
 * 音声認識に"Google Cloud STT"か"OpenAI Whisper"のどちらかを選択できます。
+<br>
+
+
+Google Cloud STTは、”MhageGH”さんの [esp32_CloudSpeech](https://github.com/MhageGH/esp32_CloudSpeech/ "Title") を参考にさせて頂きました。ありがとうございました。<br>
+"OpenAI Whisper"が使えるようにするにあたって、多大なご助言を頂いた”イナバ”さん、”kobatan”さんに感謝致します。<br>
+
 
 ---
 
